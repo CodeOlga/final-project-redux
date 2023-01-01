@@ -13,8 +13,8 @@ const Cart = () => {
         alt="icon"
       />
       <h3>TOTAL: $ {totalPrice}</h3>
-      {cartItems.map((cartItem) => (
-        <CartItem cartItem={cartItem} />
+      {cartItems.map((cartItem, index) => (
+        <CartItem key={index} cartItem={cartItem} />
       ))}
     </div>
   );

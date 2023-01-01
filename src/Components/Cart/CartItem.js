@@ -7,9 +7,9 @@ const CartItem = ({ cartItem }) => {
   const dispatch = useDispatch();
   return (
     <div>
-      <p>{dishes.name}</p>
-      <p> {cartItem.quantity} portion(s)</p>
-      <p>Price: ${dishes.price * cartItem.quantity}</p>
+      <p className="chosenDish">{dishes.name}</p>
+      <p className="chosenDish"> {cartItem.quantity} portion(s)</p>
+      <p className="chosenDish">Price: ${dishes.price * cartItem.quantity}</p>
 
       <span
         onClick={() =>

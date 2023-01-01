@@ -25,6 +25,8 @@ body {
 }
 img {
   width: 540px;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 .cartIcon {
   width: 70px;
@@ -67,4 +69,25 @@ button {
   margin-top: 20px;
   margin-left: 10px;
   padding: 5px;
+}
+
+@media all and (max-width: 500px) {
+  img {
+    width: 200px;
+  }
+  .cartIcon {
+    width: 50px;
+  }
+  .categoryButton {
+    font-size: 16px;
+  }
+  .chosenDish {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 360px) {
+  img {
+    width: 180px;
+  }
 }

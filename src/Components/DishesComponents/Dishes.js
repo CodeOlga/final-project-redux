@@ -13,7 +13,7 @@ const Dishes = () => {
           return selectedCategory === dish.category;
         })
         .map((dish) => (
-          <Dish dish={dish} />
+          <Dish key={dish.id} dish={dish} />
         ))}
     </div>
   );
